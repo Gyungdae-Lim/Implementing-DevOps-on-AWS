@@ -123,7 +123,7 @@ resource "aws_route_table_association" "private-2" {
 
 
 ### RDS ###
-
+/*
 resource "aws_security_group" "terraform-rds" {
   name = "terraform-rds"
   description = "RDS security group"
@@ -163,10 +163,10 @@ resource "aws_db_instance" "terraform" {
   vpc_security_group_ids = ["${aws_security_group.terraform-rds.id}"]
   db_subnet_group_name = "${aws_db_subnet_group.rds.id}"
 }
-
+*/
 
 ### ELB ###
-
+/*
 resource "aws_security_group" "terraform-elb" {
   name = "terraform-elb"
   description = "ELB security group"
@@ -204,7 +204,7 @@ resource "aws_elb" "terraform-elb" {
     Name = "terraform-elb"
   }
 }
-
+*/
 
 ### EC2 ###
 
