@@ -17,6 +17,7 @@ variable "vpc-name" {
 }
 
 ### RDS ###
+/*
 variable "rds-identifier" {
   type = "string"
   description = "RDS instance identifier"
@@ -53,6 +54,7 @@ variable "rds-port" {
   type = "string"
   description = "RDS port number"
 }
+*/
 
 ### EC2 ###
 variable "autoscaling-group-minsize" {
